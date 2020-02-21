@@ -1,0 +1,178 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: black;
+}
+header{
+    max-width: 100%;
+    max-height: 360px;
+    background: linear-gradient(rgb(191, 191, 224),rgb(17, 17, 236));
+}
+.container{
+    max-width: 960px;
+    margin: 0 auto;
+}
+.logo{
+    justify-content: center;
+}
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    color: black;
+    line-height: 60px;
+}
+h1 span{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    color: gray;
+    line-height: 80px;
+}
+.container2{
+    position: relative;
+    max-width: 1400px;
+    min-height: 600px;
+    margin: 100px auto 0;
+
+}
+.container2 .box{
+    position: relative;
+    max-width:270px;
+    height: calc(300px - 30px);
+    background: #000;
+    float: left;
+    margin: 15px;
+    box-sizing: border-box;
+    /* overflow: hidden; */
+    box-shadow:  0 5px 10p rgba(0,0,0,.8)
+}.container2 .box:before{
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    box-sizing: border-box;
+    transition: 0.5s;
+    transform: scaleX(0);
+    z-index: 1;
+}
+.container2 .box:hover:after{
+    transform: scaleY(1);
+    opacity:1;
+}
+.container2 .box{
+    position: relative;
+    width:calc(400px - 30px);
+    height: calc(300px - 30px);
+    background: #000;
+    float: left;
+    margin: 15px;
+    box-sizing: border-box;
+    /* overflow: hidden; */
+    box-shadow:  0 5px 10p rgba(0,0,0,.8)
+}.container2 .box:after{
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    border-right: 1px solid #fff;
+    border-left: 1px solid #fff;
+    box-sizing: border-box;
+    transition: 0.5s;
+    transform: scaleY(0);
+    z-index: 1;
+}
+.container2 .box:hover:before{
+    transform: scaleY(1);
+    opacity:1;
+}
+.container2 .box .imgbox{
+    position: relative;
+}
+.container2 .box .imgbox img{
+    width: 100%;
+    transition: 0.5s;
+}
+.container2 .box:hover .imgbox img{
+    opacity: .2;
+    transform: scale(1.2);
+}
+.container2 .box .content{
+    position: absolute;
+    width: 100%;
+    transform: translateY(-50px);
+    z-index: 2;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.container2 .box .content h2{
+    margin: 0;
+    margin-top: -150px;
+    text-align: center;
+    color: #fff;
+    transition: 0.5s;
+    transform: translateY(-50px);
+    opacity: 0;
+}
+.container2 .box .content p{
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    transition: 0.5s;
+    transform: translateY(-50px);
+    opacity: 0;
+    text-align: center;
+
+}
+.container2 .box:hover .content h2{
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0px);
+    transition-delay: 0.2s;
+}
+.container2 .box:hover .content p{
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0px);
+    transition-delay: 0.2s;
+}
+
+.container2 .box .content button{
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    transition: 0.5s;
+    transform: translateY(-50px);
+    opacity: 0;
+    text-align: center;
+    justify-content: center;
+
+}
+.container2 .box:hover .content button{
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0px);
+    transition-delay: 0.2s;
+}
+.btn{
+    width: auto;
+    height: auto;
+    background: none;
+    margin-top: 50px;
+
+}
+.btn:hover{
+    transition: all 3s;
+    background: blue;
+
+}
+a{
+   text-decoration: none;
+   color: aqua;
+}
